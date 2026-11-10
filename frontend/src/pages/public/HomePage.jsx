@@ -7,9 +7,10 @@ export function HomePage() {
       <h1>Fast Boilerplate</h1>
       <p>Reusable foundation for future applications.</p>
       <Link to="/login">
-        <Button data-testid="btn-go-login">Go to Login</Button>
+        <Button className="btn-sm" data-testid="btn-go-login">
+          Go to Login
+        </Button>
       </Link>
     </main>
   );
 }
-

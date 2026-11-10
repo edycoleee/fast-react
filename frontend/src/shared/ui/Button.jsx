@@ -1,9 +1,8 @@
-export function Button({ variant = "primary", children, ...props }) {
-  const className = `btn btn-${variant}`;
+export function Button({ variant = "primary", children, className = "", ...props }) {
+  const buttonClassName = `btn btn-${variant} ${className}`.trim();
   return (
-    <button className={className} {...props}>
+    <button className={buttonClassName} {...props}>
       {children}
     </button>
   );
 }
-
